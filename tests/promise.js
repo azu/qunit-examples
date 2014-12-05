@@ -7,3 +7,9 @@ QUnit.test("fulfilled Promise", function (assert) {
         assert.equal(value, "value")
     });
 });
+
+QUnit.test("Year! Fail test", function (assert) {
+    return Promise.resolve("value").catch(function (value) {
+        assert.equal(value, "value")
+    });
+});
